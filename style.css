@@ -144,29 +144,99 @@ h2 {
     transition-delay: 0s;
 }
 
-@media screen and (max-width: 767px) {
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
     .game-container {
-        width: 100%;
+        width: 80%;
+        height: 800px;
+        padding: 0;
     }
 
     .cards-container {
-        grid-template-rows: 125px 125px 125px 125px;
-        grid-template-columns: 33% 33% 33%;
-        grid-gap: 10px 10px;
+        grid-template-rows: 80px 80px 80px 80px;
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 5px 5px;
     }
 
     .ninja-image {
-        height: 100px;
-        width: 100px;
+        height: 70px;
+        width: 70px;
     }
 
     .card-image {
-        height: 100px;
-        width: 100px;
+        height: 70px;
+        width: 70px;
+    }
+
+    .answer-container {
+        margin: 2px 0 2px 0;
+    }
+
+    .restart-button {
+        border-radius: 5px;
+        font-size: 10px;
+        /* font-weight: bold; */
+        padding: 10px 15px;
+    }
+
+    .move-counter {
+        font-size: 15px;
+        font-weight: thin;
+    }
+
+    .feedback {
+        font-size: 10px;
+        padding: 5px;
+        font-weight: thin;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+    .game-container {
+        width: 90%;
+        height: 800px;
+        padding: 0;
+    }
+
+    .cards-container {
+        justify-content: center;
+        grid-template-rows: 125px 125px 125px;
+        grid-template-columns: 33% 33% 33% 33%;
+        grid-gap: 10px 10px;
+
+    }
+
+    .ninja-image {
+        height: 80px;
+        width: 80px;
+    }
+
+    .card-image {
+        height: 80px;
+        width: 80px;
     }
 
     .answer-container {
         margin: 10px 0 10px 0;
     }
+
+    /* .restart-button {
+        border-radius: 5px;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 10px 15px;
+    }
+
+    .move-counter {
+        font-size: 15px;
+        font-weight: thin;
+    }
+
+    .feedback {
+        font-size: 10px;
+        padding: 5px;
+        font-weight: thin;
+    } */
 
 }
