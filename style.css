@@ -148,7 +148,7 @@ h2 {
 @media screen and (max-width: 600px) {
     .game-container {
         width: 80%;
-        height: 800px;
+        height: 700px;
         padding: 0;
     }
 
@@ -176,7 +176,7 @@ h2 {
         border-radius: 5px;
         font-size: 10px;
         /* font-weight: bold; */
-        padding: 10px 15px;
+        padding: 10px 10px;
     }
 
     .move-counter {
@@ -221,22 +221,69 @@ h2 {
         margin: 10px 0 10px 0;
     }
 
-    /* .restart-button {
-        border-radius: 5px;
-        font-size: 10px;
-        font-weight: bold;
-        padding: 10px 15px;
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .game-container {
+        width: 800px;
+        height: 800px;
+        padding: 0;
     }
 
-    .move-counter {
-        font-size: 15px;
-        font-weight: thin;
+    .cards-container {
+        justify-content: center;
+        grid-template-rows: 125px 125px 125px;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-gap: 10px 10px;
+
     }
 
-    .feedback {
-        font-size: 10px;
-        padding: 5px;
-        font-weight: thin;
-    } */
+    .ninja-image {
+        height: 100px;
+        width: 100px;
+    }
+
+    .card-image {
+        height: 100px;
+        width: 100px;
+    }
+
+    .answer-container {
+        margin: 10px 0 10px 0;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    .game-container {
+        width: 1000px;
+        height: 800px;
+        padding: 0;
+    }
+
+    .cards-container {
+        justify-content: center;
+        grid-template-rows: 125px 125px 125px;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-gap: 10px 10px;
+
+    }
+
+    .ninja-image {
+        height: 100px;
+        width: 100px;
+    }
+
+    .card-image {
+        height: 100px;
+        width: 100px;
+    }
+
+    .answer-container {
+        margin: 10px 0 10px 0;
+    }
+
 
 }
